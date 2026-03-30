@@ -695,7 +695,7 @@ function Projects({ theme }) {
   const filters  = ["All", "React", "Backend", "AI"];
   const filtered = filter === "All" ? PROJECTS : PROJECTS.filter(p => p.category === filter);
   const ref      = useRef();
-  const inView   = useInView(ref, { once: true, margin: "-80px" });
+  // const inView   = useInView(ref, { once: true, margin: "-80px" });
 
   return (
     <Section id="projects" theme={theme}>
