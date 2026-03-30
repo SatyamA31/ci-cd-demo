@@ -595,10 +595,10 @@ function About({ theme }) {
 
 // ─── SKILLS ───────────────────────────────────────────────────────────────────
 const SKILLS = {
-  Frontend:        [{ name: "React.js", level: 92 }, { name: "Vue.js", level: 80 }, { name: "Next.js", level: 82 }, { name: "TypeScript", level: 78 }, { name: "Tailwind CSS", level: 90 }],
-  Backend:         [{ name: "FastAPI", level: 88 }, { name: "Spring Boot", level: 75 }, { name: "Node.js", level: 80 }, { name: "REST APIs", level: 92 }],
-  Database:        [{ name: "MySQL", level: 85 }, { name: "Redis", level: 78 }, { name: "PostgreSQL", level: 80 }, { name: "MongoDB", level: 70 }],
-  "DevOps / Tools":[{ name: "Docker", level: 75 }, { name: "Git / GitHub", level: 90 }, { name: "AWS Basics", level: 68 }, { name: "CI / CD", level: 72 }],
+  Frontend:        [{ name: "React.js", level: 20 }, { name: "Vue.js", level: 75 }, { name: "Tailwind CSS", level: 20 }],
+  Backend:         [{ name: "FastAPI", level: 70 }, { name: "Spring Boot", level: 85 }, { name: "Spring MVC", level: 80 }, { name: "Java", level: 85 }, { name: "REST APIs", level: 92 }],
+  Database:        [{ name: "MySQL", level: 85 }, { name: "Redis", level: 78 }, { name: "PostgreSQL", level: 80 }, { name: "MongoDB", level: 40 }],
+  "DevOps / Tools":[{ name: "Docker", level: 75 }, { name: "Git / GitHub", level: 80 }, { name: "AWS Basics", level: 68 }, { name: "CI / CD", level: 72 }, { name: "Hibernate", level: 85 }, { name: "BitBucket", level: 60 }, { name: "WINSCP", level: 100 }],
 };
 
 function SkillBar({ name, level, color, delay, inView }) {
@@ -663,12 +663,12 @@ function Skills({ theme }) {
 
 // ─── PROJECTS ─────────────────────────────────────────────────────────────────
 const PROJECTS = [
-  { title: "AI Document Assistant",  description: "A RAG-based document Q&A system using OpenAI embeddings, FastAPI, and React. Supports multi-document semantic search with Redis vector caching.", tech: ["React", "FastAPI", "OpenAI", "Redis"],              category: "AI",      github: "https://github.com/satyampal", demo: "#", color: "#7c3aed" },
-  { title: "E-Commerce Platform",    description: "Full-stack e-commerce solution with Spring Boot microservices, React frontend, MySQL database, and real-time inventory management.",             tech: ["React", "Spring Boot", "MySQL", "Docker"],          category: "Backend", github: "https://github.com/satyampal", demo: "#", color: "#06b6d4" },
-  { title: "DevTrack Dashboard",     description: "Real-time developer analytics dashboard built with Vue.js and FastAPI. Tracks PRs, deployments, and team velocity with beautiful charts.",       tech: ["Vue.js", "FastAPI", "PostgreSQL", "WebSocket"],     category: "React",   github: "https://github.com/satyampal", demo: "#", color: "#f59e0b" },
-  { title: "AI Code Reviewer",       description: "GitHub bot powered by GPT-4 that automatically reviews PRs, suggests improvements, and detects security vulnerabilities.",                       tech: ["Python", "OpenAI", "GitHub API", "FastAPI"],        category: "AI",      github: "https://github.com/satyampal", demo: "#", color: "#22c55e" },
-  { title: "Real-Time Chat App",     description: "Scalable chat platform with React, WebSockets, Redis pub/sub for message broadcasting, and end-to-end encryption.",                             tech: ["React", "Redis", "WebSocket", "Node.js"],           category: "React",   github: "https://github.com/satyampal", demo: "#", color: "#ec4899" },
-  { title: "Cloud Cost Optimizer",   description: "Monitors AWS resource usage, identifies waste using ML models, and generates automated optimization reports.",                                   tech: ["Python", "AWS", "FastAPI", "React"],                category: "Backend", github: "https://github.com/satyampal", demo: "#", color: "#f97316" },
+  { title: "Legal AI",  description: "A RAG-based document Q&A system using OpenAI embeddings, FastAPI, and Vue3. Supports multi-document semantic search with Redis vector caching.", tech: ["Vue3", "FastAPI", "OpenAI", "MySQL"],              category: "AI",      github: "", demo: "#", color: "#7c3aed" },//https://github.com/satyampal
+  { title: "Cess Tax Portal(Jharkhand Government)",    description: "A full-stack cess collection portal built using Java Spring Boot, Vue.js frontend, and MySQL database to enable efficient, secure, and real-time tax management.",             tech: ["Vue.js", "Spring Boot", "MySQL", "Fast2Sms"],          category: "Backend", github: "", demo: "#", color: "#06b6d4" },//https://github.com/satyampal
+  { title: "DevTrack Dashboard",     description: "Real-time developer analytics dashboard built with Vue.js and FastAPI. Tracks PRs, deployments, and team velocity with beautiful charts.",       tech: ["Vue.js", "FastAPI", "PostgreSQL", "WebSocket"],     category: "React",   github: "", demo: "#", color: "#f59e0b" },//https://github.com/satyampal
+  { title: "AI Code Reviewer",       description: "GitHub bot powered by GPT-4 that automatically reviews PRs, suggests improvements, and detects security vulnerabilities.",                       tech: ["Python", "OpenAI", "GitHub API", "FastAPI"],        category: "AI",      github: "", demo: "#", color: "#22c55e" },//https://github.com/satyampal
+  { title: "Real-Time Chat App",     description: "Scalable chat platform with React, WebSockets, Redis pub/sub for message broadcasting, and end-to-end encryption.",                             tech: ["React", "Redis", "WebSocket", "Node.js"],           category: "React",   github: "", demo: "#", color: "#ec4899" },//https://github.com/satyampal
+  { title: "Cloud Cost Optimizer",   description: "Monitors AWS resource usage, identifies waste using ML models, and generates automated optimization reports.",                                   tech: ["Python", "AWS", "FastAPI", "React"],                category: "Backend", github: "", demo: "#", color: "#f97316" },//https://github.com/satyampal
 ];
 
 function TiltCard({ children }) {
